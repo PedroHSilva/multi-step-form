@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Signup Form</header>
+        <div class="form-outer">
+            <form action="#">
+
+                <div class="page">
+                    <div class="title">Basic Info:</div>
+                    <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <button>Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Contact Info:</div>
+                    <div class="field">
+                        <div class="label">Email Address</div>
+                        <input type="email">
+                    </div>
+                    <div class="field">
+                        <div class="label">Phone Number</div>
+                        <input type="number">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev">Previous</button>
+                        <button class="next-1 next">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Date of Birth:</div>
+                    <div class="field">
+                        <div class="label">Date</div>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <div class="label">Gender</div>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-2 prev">Previous</button>
+                        <button class="next-2 next">Next</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Login Details:</div>
+                    <div class="field">
+                        <div class="label">Username</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <div class="label">Password</div>
+                        <input type="password">
+                        
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-3 prev">Previous</button>
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

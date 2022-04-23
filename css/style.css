@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(136, 75, 136);
+    background: linear-gradient(0deg, rgba(104, 208, 229, 1) 0%, rgba(136, 75, 136, 1) 100%);
+}
+
+.container {
+    width: 330px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 50px 35px 10px 35px;
+}
+
+.container header {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.container .form-outer {
+    width: 100%;
+}
+
+.form-outer form {
+    display: flex;
+    width: 400%;
+}
+
+.form-outer form .page {
+    width: 25%;
+}
+
+.form-outer form .page .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-outer form .page .field {
+    height: 45px;
+    width: 330px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+}
+
+.form-outer form .page .title .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: bold;
+}
+
+.form-outer form .page .field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.form-outer form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background-color: #884b88;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.form-outer form .page .field button:hover {
+    background: #2a8cc5;
+}
+
+.form-outer form .page .btns button {}
+
+.form-outer form .page .btns button .prev {
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+.form-outer form .page .btns button .next {
+    margin-left: 3px;
+    font-size: 17px;
+}
