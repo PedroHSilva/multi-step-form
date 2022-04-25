@@ -6,10 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Step Form</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <header>Signup Form</header>
+        <div class="progress-bar">
+            <div class="step">
+                <p>Name</p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            
+            <div class="step">
+                <p>Contact</p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            
+            <div class="step">
+                <p>Birth</p>
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            
+            <div class="step">
+                <p>Submit</p>
+                <div class="bullet">
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            
+        </div>
         <div class="form-outer">
             <form action="#">
 
@@ -23,8 +58,8 @@
                         <div class="label">First Name</div>
                         <input type="text">
                     </div>
-                    <div class="field">
-                        <button>Next</button>
+                    <div class="field btns">
+                        <button class="next-btn">Next</button>
                     </div>
                 </div>
 
@@ -84,5 +119,6 @@
             </form>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
