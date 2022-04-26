@@ -133,16 +133,27 @@ form .page .btns button.next {
     margin-bottom: 8px;
 }
 
+.progress-bar .step p.active {
+    color: #2a8cc5;
+}
+
 .progress-bar .step .bullet {
     position: relative;
     height: 25px;
     width: 25px;
-    border: 4px solid #2a8cc5;
+    border: 4px solid #000000;
     display: inline-block;
     border-radius: 50%;
     font-weight: bold;
     font-size: 17px;
     line-height: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.progress-bar .step .bullet.active {
+    border-color: #2a8cc5;
+    background-color: #2a8cc5;
+    color: #fff;
 }
 
 .progress-bar .step:last-child .bullet::before,
@@ -161,7 +172,7 @@ form .page .btns button.next {
     background-color: #000;
 }
 
-.progress-bar .step .bullet::after {
+.progress-bar .step .bullet.active::after {
     background-color: #2a8cc5;
     transform: scaleX(0);
     transform-origin: left;
@@ -183,7 +194,12 @@ form .page .btns button.next {
     transform: translateX(-50%);
 }
 
+.progress-bar .step .bullet.active span {
+    display: none;
+}
+
 .progress-bar .step .check {
+    color: #fff;
     text-align: center;
     display: absolute;
     left: 50%;
@@ -191,4 +207,8 @@ form .page .btns button.next {
     font-size: 15px;
     transform: translate(0%, -140%);
     opacity: 0;
+}
+
+.progress-bar .step .check.active {
+    opacity: 1;
 }
